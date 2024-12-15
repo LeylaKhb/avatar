@@ -195,6 +195,7 @@
         width: 100vw;
         height: 100vh;
         left: 0;
+        box-sizing: border-box;
     }
     @keyframes window-popup {
         from {
@@ -207,5 +208,11 @@
     .popup_cross {
         top: 30px;
         right: 30px;
+    }
+    .modal_window_title {
+        margin-top: 50px;
+    }
+    .popup_input_date {
+        width: 100%;
     }
 }

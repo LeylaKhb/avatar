@@ -1,6 +1,6 @@
 import React from "react";
 // @ts-ignore
-import tg from "../static/tg.PNG";
+import tg from "../static/tg.png";
 import vk from "../static/vk.webp";
 import inst from "../static/inst.png";
 import "../styles/home/social_network.css";

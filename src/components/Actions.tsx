@@ -1,7 +1,7 @@
 import home_actions_1 from "../static/home_actions_1.png";
-import home_actions_2 from "../static/home_action.png";
-import home_actions_3 from "../static/home_actions_3 (1).png";
-import home_actions_4 from "../static/home_actions_4 (1).png";
+import home_actions_2 from "../static/home_actions_2.png";
+import home_actions_3 from "../static/home_actions_3.png";
+import home_actions_4 from "../static/home_actions_4.png";
 import React, {useEffect, useRef, useState} from "react";
 import useOnScreen from "../hooks/useIntersection";
 

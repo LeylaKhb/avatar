@@ -5,18 +5,12 @@ import home_tactics from "../static/home_tactics.png"
 import home_battle from "../static/home_battle.webp"
 import home_zombies from "../static/home_zombies.webp"
 import home_party from "../static/home_party.webp"
-import home_actions_2 from "../static/home_action.png";
-import home_actions_3 from "../static/home_actions_3 (1).png";
-import home_actions_4 from "../static/home_actions_4 (1).png";
-import home_actions_1 from "../static/home_actions_1.png";
-import home_img from "../static/home_img (1).png";
+import home_img from "../static/home_img.png";
 import {Link} from "react-router-dom";
 import YandexMap from "../components/YandexMap";
 import Typed from "typed.js";
-import useOnScreen from "../hooks/useIntersection";
 import SocialNetwork from "../components/SocialNetwork";
 import Popup from "../components/Popup";
-import moment from "moment-timezone";
 import Actions from "../components/Actions";
 
 const Home: React.FC<{}> = () => {
