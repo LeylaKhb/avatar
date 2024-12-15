@@ -1,0 +1,212 @@
+.slide_zombies {
+    width: 100vw;
+}
+
+.slide_zombie_bg_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide1_zombie_title {
+    font-family: "AnotherAmerica", sans-serif;
+    color: red;
+    position: absolute;
+    top: 0;
+    font-size: 150px;
+    width: 100%;
+    text-align: center;
+}
+
+.zombies_slides_all {
+    /*overflow-x: scroll;*/
+    width: 100%;
+    position: absolute;
+    z-index: 50;
+    bottom: 20px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
+.slide_zombie_text {
+    color: white;
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    width: 35%;
+    font-size: 25px;
+    font-family: "Mont", sans-serif;
+    font-weight: 700;
+}
+
+.all_slides_zombie_img {
+    box-sizing: border-box;
+    width: 18%;
+    min-width: 200px;
+    height: auto;
+    cursor: pointer;
+}
+
+.all_slides_zombie_img:hover {
+    border: 2px solid indianred;
+}
+
+.all_slides_zombie_img.active {
+    border: 2px solid red;
+}
+
+.zombies_block {
+    font-family: Mont, sans-serif;
+    font-weight: 600;
+    position: relative;
+}
+.zombies_bg_2 {
+    width: 100%;
+    height: 107%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+.zombies_block_title {
+    font-size: 30px;
+    color: red;
+    margin-left: 5%;
+    padding-top: 5%;
+    margin-top: 0;
+    font-family: Rockwell, sans-serif;
+}
+
+.zombies_block_desc {
+    color: white;
+    font-size: 20px;
+    margin-left: 5%;
+    width: 45%;
+}
+
+.zombies_block_desc_2 {
+    font-weight: 900;
+    font-size: 27px;
+}
+
+.zombie_spider {
+    margin-left: auto;
+    width: 35%;
+    position: absolute;
+    right: 20px;
+    top: 15%;
+}
+
+.all_zombies_black_block {
+    position: relative;
+    height: 330px;
+    background-color: #000000;
+}
+
+.all_zombies_black_block::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient(to bottom, #232828, #000000);
+}
+
+.all_zombies_black_block::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient(to top, #0b0b0d, #000000);
+}
+
+
+.all_zombies_title {
+    font-size: 50px;
+    color: red;
+    font-family: Unutterable,sans-serif;
+    text-align: center;
+    padding-top: 50px;
+    line-height: 1.4;
+}
+
+.zombie_bg_3 {
+    width: 100%;
+    z-index: -1;
+}
+
+.all_zombies {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    animation: bounceUpDownZombie 3s infinite;
+}
+
+@media screen and (max-width: 1000px) {
+    .zombies_slides_all {
+        overflow-x: scroll;
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .slide1_zombie_title {
+        font-size: 80px;
+    }
+    .slide_zombie_text {
+        top: 15%;
+        left: 5%;
+        width: 100%;
+        font-size: 18px;
+        font-weight: 900;
+        text-shadow: 1px 1px 2px gray;
+    }
+    .all_slides_zombie_img {
+        min-width: 150px;
+    }
+    .zombies_block_desc {
+        font-size: 15px;
+        width: 90%;
+    }
+    .zombies_block_desc_2 {
+        font-size: 20px;
+    }
+    .zombie_spider {
+        width: 30%;
+        top: 0;
+    }
+    .all_zombies_title {
+        font-size: 30px;
+    }
+    .zombie_bg_3 {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+    .all_zombies {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+        top: 100px
+    }
+    .all_zombies_black_block {
+        height: 250px;
+    }
+}
+@keyframes bounceUpDownZombie {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-50px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

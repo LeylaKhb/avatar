@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+.page_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Mediator, Arial, sans-serif;
+    width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hidden_top {
+    visibility: hidden;
+    opacity: 0;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -157.5, 0, 1);
+}
+
+.hidden_bottom {
+    visibility: hidden;
+    opacity: 0;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 157.5, 0, 1);
+}
+
+.visible {
+    transition: all, opacity 0.8s cubic-bezier(0.5, 0, 0, 1), transform 0.8s cubic-bezier(0.5, 0, 0, 1);
+    visibility: visible;
+    opacity: 1;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+}
+
+@keyframes letter {
+    0% {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.word div {
+    animation: letter 0.5s ease forwards;
+    display: inline-block;
+}
+
+input, button {
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.cursor {
+
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    :root {
+        scroll-behavior: smooth;
+    }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@font-face {
+    font-family: "Mont";
+    src: url("fonts/MontThin.ttf") format("truetype");
+    font-weight: 100;
 }
 
-.App-link {
-  color: #61dafb;
+@font-face {
+    font-family: "AnotherAmerica";
+    src: url("fonts/AnotherAmerica.otf") format("opentype");
+    font-weight: 100;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@font-face {
+    font-family: "Unutterable";
+    src: url("fonts/Unutterable.ttf") format("truetype");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "Saar SP";
+    src: url("fonts/SaarSP.otf") format("opentype");
+    font-weight: 100;
 }

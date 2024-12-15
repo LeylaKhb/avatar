@@ -1,0 +1,243 @@
+header {
+    width: 97%;
+    height: 60px;
+    position: fixed;
+    z-index: 100;
+    background-color: white;
+    padding: 10px 2%;
+    border-bottom: #c7ccd1 solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 1%;
+    padding-right: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row;
+    position: absolute;
+    border-top: #c7ccd1 solid;
+    /*bottom: 0;*/
+}
+
+.menu_and_logo {
+    display: flex;
+    flex-flow: row;
+}
+
+.menu_header {
+    display: none;
+    width: 50px;
+    height: 50px;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.links_container_header, .links_container_footer {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.link_header_footer {
+    text-decoration: none;
+    color: black;
+    font-size: 0.95rem;
+}
+
+.header_footer_buttons {
+    display: flex;
+    justify-content: right;
+}
+
+.logo_and_button .header_footer_buttons {
+    display: none;
+}
+
+.footer_button {
+    height: 40px;
+    width: 150px;
+    border-radius: 6px;
+    border: #343f52 2px solid;
+    background: none;
+    font-size: 0.85rem;
+    cursor: pointer;
+    color: #343f52;
+}
+
+.menu_header_block {
+    background-color: #000000;
+    width: 28px;
+    height: 3px;
+    position: absolute;
+    left: 25px;
+    transition: .25s ease-in-out;
+    z-index: 2;
+
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #ffffff;
+    opacity: 1;
+    margin-right: auto;
+    z-index: 1;
+}
+
+.menu_ul {
+    text-align: center;
+    margin-top: 150px;
+    padding-left: 0;
+}
+
+.menu_li {
+    list-style-type: none;
+    margin: 20px auto;
+}
+
+.menu_li_link {
+    line-height: 1.17;
+    color: #3d3d3d;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+    text-decoration: none;
+}
+
+.contacts_header_footer {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding-right: 50px;
+}
+
+.contacts_header_footer_with_logo {
+    display: none;
+    flex-flow: column;
+    align-items: center;
+    padding-right: 50px;
+}
+
+.tel_link {
+    color: black;
+}
+
+@media screen and (max-width: 1340px) {
+    .links_container_header {
+        display: none;
+    }
+
+    .menu_header {
+        display: initial;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .logo_and_button .contacts_header_footer_with_logo {
+        display: flex;
+    }
+
+    footer .contacts_header_footer {
+        display: none;
+    }
+
+    .logo_and_button {
+        display: flex;
+        justify-content: space-between;
+        width: 95%;
+    }
+
+    footer {
+        flex-flow: column;
+        padding-bottom: 50px;
+    }
+
+    .links_container_footer {
+        width: 600px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .header_footer_buttons {
+        flex-flow: column;
+        justify-content: space-between;
+    }
+
+    .registration_button, .login_button {
+        height: 30px;
+        width: 140px;
+        font-size: 0.8rem;
+    }
+
+    .login_button {
+        margin-top: 5px;
+    }
+
+    .links_container_footer {
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .registration_button, .login_button {
+        height: 25px;
+        width: 100px;
+        font-size: 0.7rem;
+    }
+
+    .logo_and_button {
+        margin-left: 25px;
+    }
+
+    .registration_button {
+        font-size: 0.57rem;
+    }
+
+    .links_container_footer {
+        flex-flow: column;
+        margin-left: 55px;
+    }
+
+    .links_container_footer .link_header_footer {
+        margin-bottom: 10px;
+    }
+
+    .logo_and_button .header_footer_buttons {
+        display: none;
+    }
+
+    footer .header_footer_buttons {
+        margin-left: 55px;
+        margin-bottom: 20px;
+        display: initial;
+    }
+
+    footer {
+        align-items: flex-start;
+    }
+
+    .links_container_footer {
+        width: 50%;
+    }
+
+    .footer_button {
+        height: 35px;
+        width: 135px;
+    }
+    .contacts_header_footer {
+        padding-right: 0;
+    }
+}

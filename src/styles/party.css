@@ -1,0 +1,213 @@
+.img_team {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 50%
+}
+
+.img_girl {
+    margin-right: 0;
+    margin-left: auto;
+    width: 40%;
+    transform: scaleX(-1);
+    display: block
+}
+
+.title_party {
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    font-size: 50px;
+}
+
+.party_family {
+    top: 550px;
+    width: 50%
+}
+
+.bg_yellow {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    margin: auto;
+}
+
+
+.arrow_down {
+    animation: bounceUpDown 5s infinite;
+    margin-bottom: 200px;
+    position: absolute;
+    margin-left: 15%;
+}
+.party_game_title {
+    font-size: 50px;
+    font-weight: 900;
+    position: absolute;
+    top: 0;
+}
+.party_game_desc {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 130px;
+    font-size: 20px;
+}
+.party_game_block {
+    display: flex;
+    flex-flow: row;
+    position: relative;
+    margin-top: 100px;
+}
+.move_right_block {
+    flex-flow: row-reverse;
+}
+.move_left_block {
+    flex-flow: row;
+}
+.party_game_circle {
+    border-radius: 50%;
+    background-color: #FFCF40;
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+.move_right_circle {
+    transform: translate(18%);
+}
+
+.move_left_circle {
+    transform: translate(-18%);
+}
+.party_game_img {
+    animation: partyImg 3s infinite;
+    width: 450px;
+    position: absolute;
+    top: 130px;
+    left: 150px;
+    box-shadow: inset 0 0 0 2px white, 0 0 0 9px white, 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 920px) {
+    .title_party, .party_game_title {
+        font-size: 40px;
+    }
+    .party_game_block {
+        flex-flow: column;
+    }
+    .party_game_circle {
+        top: 20px;
+        transform: translate(-100%) translateY(50%);
+        width: 200px;
+        height: 200px;
+    }
+    .move_right_circle {
+        transform: translateY(50%);
+        left: 50%;;
+    }
+    .move_left_circle {
+        left: 50%;
+    }
+    .party_game_img {
+        width: 200px;
+        top: 40px;
+        left: 100px;
+    }
+    .party_game_title {
+        width: 80%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .title_party, .party_game_title {
+        font-size: 30px;
+    }
+
+    .arrow_down {
+        width: 20%;
+        animation: bounceUpDownMobile 3s infinite;
+    }
+
+
+    .party_game_desc {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .title_party {
+        font-size: 20px;
+        left: 10%;
+    }
+
+    .img_team {
+        left: 20px;
+    }
+
+    .move_right_circle {
+        right: 0;
+    }
+    .party_family {
+        width: 90%;
+        transform: translateX(5%);
+        margin: auto auto 30px;
+    }
+    .arrow_down {
+        left: 45%;
+        margin-left: 0;
+        margin-bottom: 0;
+        margin-top: 250px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .party_game_title {
+        font-size: 20px;
+        top: 50px;
+    }
+
+    .party_game_desc {
+        font-size: 12px;
+    }
+}
+
+@keyframes bounceUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(150px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounceUpDownMobile {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(50px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes partyImg {
+    0% {
+        transform: rotate(20deg) scale(1.05);
+    }
+
+    50% {
+        transform: rotate(-6deg);
+    }
+
+    100% {
+        transform: rotate(20deg) scale(1.05);
+    }
+}

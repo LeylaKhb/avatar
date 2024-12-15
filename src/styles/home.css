@@ -1,0 +1,428 @@
+.home_games {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 1100px;
+    width: 100%;
+    margin-top: 50px;
+}
+.home_game {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 2;
+    position: relative;
+    font-family: "Open Sans", sans-serif;
+}
+
+.home_game_img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    position: absolute;
+}
+
+.home_game:hover .home_game_img {
+    transform: scale(1.1);
+    transform-origin: center;
+}
+.home_games_title {
+    font-size: 60px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.home_game.party::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(51deg, #FF00FE 22.54%, rgba(255, 0, 254, 0) 51.77%);
+    z-index: 1;
+}
+
+.home_game.battle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(51deg, #00BBFE 22.54%, rgba(0, 187, 254, 0) 51.77%);
+    z-index: 1;
+}
+
+.home_game.zombies::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(51deg, #BC3AFF 22.54%, rgba(188, 58, 255, 0) 51.77%);
+    z-index: 1;
+}
+
+.home_game.tactics::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(51deg, #1BD722 22.54%, rgba(27, 215, 34, 0) 51.77%);
+    z-index: 1;
+}
+
+.home_game_title {
+    z-index: 2;
+    position: absolute;
+    color: white;
+    top: 35%;
+    left: 5%;
+}
+
+.home_game_titles {
+    z-index: 2;
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 5%;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+}
+.home_game_titles span, .home_game_desc span {
+    margin-bottom: 3px;
+}
+.home_game_desc {
+    z-index: 2;
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 25%;
+    display: flex;
+    flex-direction: column;
+}
+.home_game_button {
+    z-index: 2;
+    position: absolute;
+    /*color: transparent;*/
+    top: 87%;
+    left: 5%;
+    border-radius: 28px;
+    background-color: #fff;
+    color: #000;
+    mix-blend-mode: screen;
+    font-weight: 600;
+    line-height: 123%;
+    font-size: 16px;
+    outline: solid 5px;
+    transition: all .3s;
+    border: none;
+    padding: 3px;
+}
+.maps_block {
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.maps_title {
+    font-size: 60px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.home_title {
+    font-size: 120px;
+    color: #e69e19;
+    margin-bottom: 0;
+    font-family: Mont, sans-serif;
+    font-weight: 900;
+    text-align: center;
+}
+.home_title.block_2, .home_title.block_3 {
+    font-size: 80px;
+}
+.home_desc {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.home_img {
+    width: 80%;
+    margin: auto;
+    animation: bounceUpDownMobile 3s infinite;
+}
+
+.home_actions {
+    display: grid;
+    gap: 100px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 1000px;
+    width: 100%;
+    margin-top: 50px;
+    place-items: end;
+}
+
+.home_actions_img {
+    width: 100%;
+}
+
+.home_actions_desc {
+    width: 100%;
+    font-weight: 900;
+    font-size: 30px;
+    text-align: center;
+    font-family: Mont, sans-serif;
+}
+
+.home_actions_div {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    flex-flow: column;
+}
+
+.contacts_block {
+    background-color: #e69e19;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 300px;
+    padding-left: 50px;
+    margin-top: 30px;
+}
+.contacts_row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 600px;
+}
+.contact {
+    margin-top: 30px;
+    /*color: #141b2d;*/
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 400;
+    margin-right: 50px;
+}
+
+.tel_input, .name_input {
+    margin-top: 10px;
+    color: #000000;
+    border: 1px black solid;
+    height: 40px;
+    padding: 0 20px 0 30px;
+    font-size: 16px;
+    line-height: 1.33;
+    border-radius: 6px;
+    margin-right: 30px;
+    width: 115px
+}
+.name_input {
+    padding: 0 20px;
+    width: 125px;
+}
+.contacts_button {
+    margin-top: 10px;
+    color: #ffffff;
+    background-color: black;
+    border-radius: 6px;
+    height: 40px;
+    font-size: 16px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 170px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+.contacts_questions {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.tel_span {
+    position: absolute;
+    transform: translateY(-30px) translateX(10px);
+}
+
+.price_table {
+    width: 100%;
+    border-spacing: 40px 15px;
+    border-collapse: separate;
+    font-family: "Open Sans", sans-serif;
+}
+
+.price_table th, .price_table td {
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 5px;
+    background-color: #DCDCDC;
+}
+.price_table th {
+    padding: 20px;
+}
+.price_table, .price_table th, .price_table td {
+    border: 0;
+}
+.closed-games-row {
+    display: flex;
+    flex-flow: column;
+}
+
+.consultation_button {
+    width: 300px;
+    /*height: 30px;*/
+    background-color: #e69e19;
+    border-radius: 6px;
+    border: none;
+    font-size: 20px;
+    padding: 15px 30px;
+    margin-top: 40px;
+}
+.price-container {
+    width: 100%;
+    font-family: "Open Sans", sans-serif;
+    display: none;
+    margin-top: 50px;
+}
+
+.price-row {
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 5px;
+    background-color: #DCDCDC;
+    border-bottom: 1px solid #ccc; /* Add a bottom border for separation */
+    display: flex; /* Allow for flexible arrangement of the span elements */
+    justify-content: space-between;
+}
+
+.price-row:first-child {
+    border-top: 1px solid #ccc;
+}
+
+.price-row span {
+    margin: 0 5px; /* Add small margins between spans */
+}
+
+.price-row span:first-child {
+    font-weight: 600;
+}
+
+/* Style for the background color on the days of the week */
+.price-row[style*='background-color: #e69e19'] {
+    background-color: #e69e19;
+}
+.contacts_form {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    margin-bottom: 5px;
+}
+@media screen and (max-width: 1000px) {
+    .home_actions, .home_games {
+        max-width: 700px;
+    }
+    .home_title.block_2 {
+        font-size: 60px;
+    }
+    .price_table {
+        border-spacing: 20px 10px;
+    }
+    .price_table td {
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .home_actions, .home_games {
+        max-width: 350px;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    .price_table {
+        display: none;
+    }
+    .price-container {
+        display: initial;
+    }
+    .contacts_row {
+        flex-flow: column;
+        width: 230px;
+    }
+    .contacts_block {
+        height: 500px;
+    }
+    .contacts_form {
+        flex-flow: column;
+    }
+    .home_title {
+        font-size: 50px;
+    }
+    .home_title.block_2 {
+        font-size: 30px;
+    }
+    .home_desc {
+        font-size: 15px;
+    }
+    .home_img {
+        margin-bottom: 50px;
+    }
+    .consultation_button {
+        font-size: 16px;
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+    .home_actions_desc {
+        font-size: 18px;
+    }
+    .contact {
+        margin-right: 0;
+    }
+    .contacts_questions {
+        font-size: 23px;
+        margin-top: 25px;
+    }
+    .home_game_title {
+        font-size: 25px;
+    }
+    .home_game_desc {
+        left: 40%;
+        font-size: 14px;
+    }
+    .home_game_titles {
+        font-size: 14px;
+    }
+    .price-row {
+        font-size: 20px;
+        padding: 20px;
+
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .home_actions, .home_games {
+        max-width: 300px;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .contacts_block {
+        height: 600px;
+    }
+}

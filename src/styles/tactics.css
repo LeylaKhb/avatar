@@ -1,0 +1,295 @@
+.aim-crosshair {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px; /* Диаметр прицела */
+    height: 50px;
+    transform: translate(-50%, -50%);
+    border: 2px solid #e69e19; /* Внешний круг */
+    border-radius: 50%; /* Делает круг */
+    box-shadow: 0 0 10px rgba(230, 158, 25, 0.8); /* Эффект свечения */
+}
+
+.aim-crosshair::before,
+.aim-crosshair::after {
+    content: '';
+    position: absolute;
+    background-color: #e69e19;
+}
+
+.aim-crosshair::before {
+    width: 2px; /* Вертикальная линия */
+    height: 100%; /* Полная высота круга */
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+.aim-crosshair::after {
+    width: 100%; /* Горизонтальная линия */
+    height: 2px; /* Толщина линии */
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.tactics_title_bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tactics_title_div::before, .tactics_about_div::before {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background-image: linear-gradient(0deg, #171717 57.88%, rgba(23, 23, 23, 0) 103.17%);
+}
+
+.tactics_games_title {
+    position: absolute;
+    bottom: 7%;
+    width: 80%;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tactics_games_desc {
+    position: absolute;
+    bottom: 2%;
+    width: 60%;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: Helvetica, sans-serif;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+}
+
+.tactics_about_bg {
+    width: 100%;
+    min-height: 500px;
+    object-fit: cover;
+}
+
+.tactics_about_div .shuffle-text {
+    position: absolute;
+    top: 65%;
+    left: 5%;
+    font-size: 60px;
+    font-family: Rockwell, sans-serif;
+    font-weight: 900;
+}
+
+.tactics_modes_div .shuffle-text {
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    font-size: 60px;
+    font-family: "Saar SP", sans-serif;
+    font-weight: 900;
+    z-index: 2;
+}
+
+.tactics_about_div .shuffle-text-char {
+    background: url("../static/tactics/tactics_for_titles_bg.jpg") no-repeat center / cover;
+    background-clip: text;
+    color: transparent;
+}
+
+.tactics_modes_div .shuffle-text-char {
+    color: white;
+}
+
+.tactics_about_desc {
+    position: absolute;
+    top: 75%;
+    left: 5%;
+    font-size: 22px;
+    color: white;
+    width: 40%;
+    font-family: Helvetica, sans-serif;
+}
+
+.tactics_modes_bg {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+}
+
+.tactics_mode_div {
+    width: 100%;
+    height: 100%;
+    border-bottom: #e69e19 2px solid;
+    border-top: #e69e19 2px solid;
+    backdrop-filter: blur(2px);
+}
+
+.tactics_mode_block {
+    position: relative;
+    width: 100%;
+    height: 280px;
+}
+
+.tactics_mode_title {
+    font-family: Saar SP Regular, sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    color: white;
+    z-index: 1;
+}
+
+.tactics_modes_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tactic-modes__blocks {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    height: 500px;
+    max-width: 1200px;
+    width: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 200px;
+}
+
+.tactics_mode_desc {
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    color: white;
+    width: 90%;
+    z-index: 2;
+}
+
+.tactics_mode_div::after {
+    backdrop-filter: blur(2px);
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: all .1s;
+    z-index: 0;
+}
+
+.tactics_mode_block:hover .tactics_mode_div::after {
+    backdrop-filter: none;
+}
+
+.tactics_mode_bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 1050px) {
+    .tactics_games_title {
+        bottom: 10%;
+    }
+
+    .tactics_games_desc {
+        width: 90%;
+    }
+
+    .tactics_about_div .shuffle-text {
+        top: 50%;
+        font-size: 50px;
+    }
+
+    .tactics_about_desc {
+        top: 60%;
+        font-size: 20px;
+    }
+
+    .tactics_modes_div .shuffle-text {
+        font-size: 50px;
+    }
+
+    .tactic-modes__blocks {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .tactics_mode_block {
+        height: 200px;
+    }
+
+    .tactics_modes_bg {
+        height: 1300px;
+        object-fit: cover;
+    }
+
+    .tactics_mode_title {
+        top: 40%;
+    }
+
+    .tactics_mode_desc {
+        text-shadow: 1px 1px 1px black;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .tactics_games_title {
+        width: 100%;
+        bottom: 25%;
+    }
+
+    .tactics_games_desc {
+        font-size: 18px;
+        bottom: 15%;
+    }
+
+    .tactics_about_div .shuffle-text {
+        font-size: 40px;
+    }
+
+    .tactics_about_desc {
+        top: 60%;
+        font-size: 16px;
+        width: 60%;
+    }
+
+    .tactic-modes__blocks {
+        display: grid;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .tactics_mode_block {
+        height: 250px;
+    }
+
+    .tactics_modes_bg {
+        height: 1400px;
+    }
+
+    .tactics_mode_title {
+        font-size: 25px;
+        top: 35%;
+    }
+
+    .tactics_mode_desc {
+        top: 55%;
+    }
+
+    .tactics_modes_div .shuffle-text {
+        font-size: 40px;
+        top: 20%;
+    }
+}
