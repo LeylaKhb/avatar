@@ -1,25 +1,26 @@
 import React, {useEffect, useRef, useState} from "react";
 import {Helmet, HelmetProvider} from "react-helmet-async";
-import bg_title from "../static/battle/bg_title.png";
-import character_desc_1 from "../static/battle/character_desc_1.webp";
-import character_desc_2 from "../static/battle/character_desc_2.webp";
-import character_desc_3 from "../static/battle/character_desc_3.webp";
 import {Swiper,  SwiperSlide} from 'swiper/react';
 import {Autoplay, Navigation} from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import unique_ability from "../static/battle/unique_ability.svg";
-import title_boy from "../static/battle/title_boy.png";
-import title_character_2 from "../static/battle/title_character_2.png";
 import "../styles/battle.css";
 import useOnScreen from "../hooks/useIntersection";
 import {battle_characters} from "../text/battle";
-import character_all from "../static/battle/character_all.png";
+
+import bg_title from "../static/battle/bg_title.webp";
+import character_desc_1 from "../static/battle/character_desc_1.webp";
+import character_desc_2 from "../static/battle/character_desc_2.webp";
+import character_desc_3 from "../static/battle/character_desc_3.webp";
+import unique_ability from "../static/battle/unique_ability.svg";
+import title_boy from "../static/battle/title_boy.webp";
+import title_character_2 from "../static/battle/title_character_2.webp";
+import character_all from "../static/battle/character_all.webp";
 import bg_modes from "../static/battle/bg_modes.webp";
-import mode_1 from "../static/battle/mode_1.png";
-import mode_2 from "../static/battle/mode_2.png";
-import mode_3 from "../static/battle/mode_3.png";
-import mode_4 from "../static/battle/mode_4.png";
+import mode_1 from "../static/battle/mode_1.webp";
+import mode_2 from "../static/battle/mode_2.webp";
+import mode_3 from "../static/battle/mode_3.webp";
+import mode_4 from "../static/battle/mode_4.webp";
 
 const BattleGames: React.FC = () => {
     const titleRef = useRef<HTMLDivElement>(null);

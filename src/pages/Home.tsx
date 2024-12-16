@@ -1,11 +1,12 @@
 import React, {useEffect, useRef, useState} from "react";
 import {Helmet, HelmetProvider} from 'react-helmet-async';
 import "../styles/home.css";
-import home_tactics from "../static/home_tactics.png"
+import home_tactics from "../static/home_tactics.webp"
 import home_battle from "../static/home_battle.webp"
 import home_zombies from "../static/home_zombies.webp"
 import home_party from "../static/home_party.webp"
-import home_img from "../static/home_img.png";
+import home_img from "../static/home_img.webp";
+import bell from "../static/bell.svg";
 import {Link} from "react-router-dom";
 import YandexMap from "../components/YandexMap";
 import Typed from "typed.js";
@@ -242,7 +243,7 @@ const Home: React.FC<{}> = () => {
                                 </tr>
                                 <tr>
                                     <td style={{backgroundColor: '#e69e19', fontWeight: 600}}>ПТ-ВС</td>
-                                    <td style={{fontWeight: 600}}>700₽/час</td>
+                                    <td style={{fontWeight: 600}}>700₽/чел</td>
                                     <td>
                                         <div className="closed-games-row">
                                             <span style={{fontWeight: 600}}>7000₽</span>
@@ -265,7 +266,7 @@ const Home: React.FC<{}> = () => {
                             </table>
                             <div className="price-container">
                                 <div className="price-row" style={{backgroundColor: '#e69e19', fontWeight: 600}}>
-                                    ПН-ЧТ
+                                    Понедельник-Четверг
                                 </div>
                                 <div className="price-row" style={{backgroundColor: "#A5A5A5"}}>
                                     <span style={{fontWeight: 600}}>ОТКРЫТАЯ ИГРА</span>
@@ -287,13 +288,13 @@ const Home: React.FC<{}> = () => {
                                 </div>
                                 {/* Repeat for ПТ-ВС section */}
                                 <div className="price-row" style={{backgroundColor: '#e69e19', fontWeight: 600}}>
-                                    ПТ-ВС
+                                    Пятница-Воскресенье
                                 </div>
                                 <div className="price-row" style={{backgroundColor: "#A5A5A5"}}>
                                     <span style={{fontWeight: 600}}>ОТКРЫТАЯ ИГРА</span>
                                 </div>
                                 <div className="price-row">
-                                    <span style={{fontWeight: 600}}>700₽/час</span>
+                                    <span style={{fontWeight: 600}}>700₽/чел</span>
                                 </div>
                                 <div className="price-row" style={{backgroundColor: "#A5A5A5"}}>
                                     <span style={{fontWeight: 600}}>ЗАКРЫТАЯ ИГРА</span>
@@ -308,7 +309,25 @@ const Home: React.FC<{}> = () => {
                                     <span style={{fontWeight: 600}}>4000₽</span> <span>3-й час</span>
                                 </div>
                             </div>
-
+                            <div style={{width: '90%', marginRight: '5%', marginLeft: '5%', marginTop: 20, boxSizing: "border-box"}}>
+                                <div style={{display: "flex", flexFlow: "row"}}>
+                                    <img src={bell} className="bell"/>
+                                    <div className="bell_text">Лаунж-зона для вашего праздника, оборудованная столами,
+                                        стульями, микроволновой печью, кулером и посудой в подарок!
+                                    </div>
+                                </div>
+                                <div style={{display: "flex", flexFlow: "row", marginTop: 12}}>
+                                    <img src={bell} className="bell"/>
+                                    <div className="bell_text">Открытая игра: оплата идет за игрока, каждый платит сам
+                                        за себя, к вам могут присоединиться другие участники
+                                    </div>
+                                </div>
+                                <div style={{display: "flex", flexFlow: "row", marginTop: 12}}>
+                                    <img src={bell} className="bell"/>
+                                    <div className="bell_text">Закрытая игра: аренда площадки только для вашей компании. Фиксированная цена вне зависимости от количества участников
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div className="maps_block">

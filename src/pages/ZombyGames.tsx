@@ -1,7 +1,7 @@
 import React, {useEffect, useRef, useState} from "react";
 import {Helmet, HelmetProvider} from 'react-helmet-async';
-import zombies_bg_2 from "../static/zombies/zombies_bg_2.png";
-import spider from "../static/zombies/spider.png";
+import zombies_bg_2 from "../static/zombies/zombies_bg_2.webp";
+import spider from "../static/zombies/spider.webp";
 import zombie_bg_3 from "../static/zombies/zombie_bg_3.webp";
 import all_zombies from "../static/zombies/all_zombies.webp";
 import {Swiper, SwiperSlide} from 'swiper/react';

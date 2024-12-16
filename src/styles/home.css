@@ -6,6 +6,7 @@
     width: 100%;
     margin-top: 50px;
 }
+
 .home_game {
     width: 100%;
     height: 300px;
@@ -29,6 +30,7 @@
     transform: scale(1.1);
     transform-origin: center;
 }
+
 .home_games_title {
     font-size: 60px;
     font-family: "Open Sans", sans-serif;
@@ -96,9 +98,11 @@
     display: flex;
     flex-direction: column;
 }
+
 .home_game_titles span, .home_game_desc span {
     margin-bottom: 3px;
 }
+
 .home_game_desc {
     z-index: 2;
     position: absolute;
@@ -108,6 +112,7 @@
     display: flex;
     flex-direction: column;
 }
+
 .home_game_button {
     z-index: 2;
     position: absolute;
@@ -126,6 +131,7 @@
     border: none;
     padding: 3px;
 }
+
 .maps_block {
     width: 90%;
     align-items: center;
@@ -143,13 +149,15 @@
     font-size: 120px;
     color: #e69e19;
     margin-bottom: 0;
-    font-family: Mont, sans-serif;
-    font-weight: 900;
+    font-family: "Mont Heavy", sans-serif;
+    font-weight: 100;
     text-align: center;
 }
+
 .home_title.block_2, .home_title.block_3 {
     font-size: 80px;
 }
+
 .home_desc {
     font-size: 30px;
     font-weight: 600;
@@ -200,12 +208,14 @@
     padding-left: 50px;
     margin-top: 30px;
 }
+
 .contacts_row {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     width: 600px;
 }
+
 .contact {
     margin-top: 30px;
     /*color: #141b2d;*/
@@ -227,10 +237,12 @@
     margin-right: 30px;
     width: 115px
 }
+
 .name_input {
     padding: 0 20px;
     width: 125px;
 }
+
 .contacts_button {
     margin-top: 10px;
     color: #ffffff;
@@ -247,6 +259,7 @@
     overflow: hidden;
     position: relative;
 }
+
 .contacts_questions {
     font-size: 30px;
     margin-top: 20px;
@@ -273,12 +286,15 @@
     border-radius: 5px;
     background-color: #DCDCDC;
 }
+
 .price_table th {
     padding: 20px;
 }
+
 .price_table, .price_table th, .price_table td {
     border: 0;
 }
+
 .closed-games-row {
     display: flex;
     flex-flow: column;
@@ -286,7 +302,7 @@
 
 .consultation_button {
     width: 300px;
-    /*height: 30px;*/
+    color: black;
     background-color: #e69e19;
     border-radius: 6px;
     border: none;
@@ -294,6 +310,7 @@
     padding: 15px 30px;
     margin-top: 40px;
 }
+
 .price-container {
     width: 100%;
     font-family: "Open Sans", sans-serif;
@@ -328,22 +345,33 @@
 .price-row[style*='background-color: #e69e19'] {
     background-color: #e69e19;
 }
+
+.bell {
+    width: 25px;
+}
+.bell_text {
+    margin-left: 10px;
+}
 .contacts_form {
     display: flex;
     flex-flow: row;
     width: 100%;
     margin-bottom: 5px;
 }
+
 @media screen and (max-width: 1000px) {
     .home_actions, .home_games {
         max-width: 700px;
     }
+
     .home_title.block_2 {
         font-size: 60px;
     }
+
     .price_table {
         border-spacing: 20px 10px;
     }
+
     .price_table td {
         font-size: 18px;
     }
@@ -355,59 +383,76 @@
         max-width: 350px;
         grid-template-columns: repeat(1, minmax(0, 1fr));
     }
+
     .price_table {
         display: none;
     }
+
     .price-container {
         display: initial;
     }
+
     .contacts_row {
         flex-flow: column;
         width: 230px;
     }
+
     .contacts_block {
         height: 500px;
     }
+
     .contacts_form {
         flex-flow: column;
     }
+
     .home_title {
         font-size: 50px;
     }
+
     .home_title.block_2 {
         font-size: 30px;
     }
+
     .home_desc {
         font-size: 15px;
     }
+
     .home_img {
         margin-bottom: 50px;
     }
+
     .consultation_button {
         font-size: 16px;
         padding: 15px;
         margin-bottom: 10px;
     }
+
     .home_actions_desc {
         font-size: 18px;
     }
+
     .contact {
         margin-right: 0;
     }
+
     .contacts_questions {
         font-size: 23px;
         margin-top: 25px;
     }
+
     .home_game_title {
         font-size: 25px;
     }
+
     .home_game_desc {
         left: 40%;
         font-size: 14px;
     }
+
     .home_game_titles {
         font-size: 14px;
     }
+
     .price-row {
         font-size: 20px;
         padding: 20px;

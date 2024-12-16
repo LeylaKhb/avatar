@@ -1,8 +1,8 @@
-import slide1_bg from "../static/zombies/slide1_bg.png";
-import slide2_bg from "../static/zombies/slide2_bg.png";
-import slide3_bg from "../static/zombies/slide3_bg.png";
-import slide4_bg from "../static/zombies/slide4_bg.png";
-import slide5_bg from "../static/zombies/slide5_bg.png";
+import slide1_bg from "../static/zombies/slide1_bg.webp";
+import slide2_bg from "../static/zombies/slide2_bg.webp";
+import slide3_bg from "../static/zombies/slide3_bg.webp";
+import slide4_bg from "../static/zombies/slide4_bg.webp";
+import slide5_bg from "../static/zombies/slide5_bg.webp";
 export const zombies_slides = [
     {
         index: 0,

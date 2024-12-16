@@ -1,7 +1,7 @@
-import home_actions_1 from "../static/home_actions_1.png";
-import home_actions_2 from "../static/home_actions_2.png";
-import home_actions_3 from "../static/home_actions_3.png";
-import home_actions_4 from "../static/home_actions_4.png";
+import home_actions_1 from "../static/home_actions_1.webp";
+import home_actions_2 from "../static/home_actions_2.webp";
+import home_actions_3 from "../static/home_actions_3.webp";
+import home_actions_4 from "../static/home_actions_4.webp";
 import React, {useEffect, useRef, useState} from "react";
 import useOnScreen from "../hooks/useIntersection";
 
@@ -48,7 +48,7 @@ const Actions: React.FC = () => {
             <div className="home_actions">
                 <div className={`home_actions_div ${firstParagraphHasBeenVisible? "visible" : "hidden_bottom"}`}>
                     <img src={home_actions_1} className="home_actions_img"/>
-                    <div className="home_actions_desc" ref={firstParagraphRef}>Провести время с семьей</div>
+                    <div className="home_actions_desc" ref={firstParagraphRef}>Провести время с семьей и друзьями</div>
                 </div>
                 <div className={`home_actions_div ${secondParagraphHasBeenVisible? "visible" : "hidden_bottom"}`}>
                     <img src={home_actions_2} className="home_actions_img"/>
@@ -60,7 +60,7 @@ const Actions: React.FC = () => {
                 </div>
                 <div className={`home_actions_div ${fourthParagraphHasBeenVisible? "visible" : "hidden_bottom"}`}>
                     <img src={home_actions_4} className="home_actions_img"/>
-                    <div className="home_actions_desc" id="games" ref={fourthParagraphRef}>Организовать праздник для всего класса</div>
+                    <div className="home_actions_desc" id="games" ref={fourthParagraphRef}>Организовать досуг для любителей vr-игр</div>
                 </div>
             </div>
         </div>

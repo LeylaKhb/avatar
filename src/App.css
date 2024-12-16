@@ -82,3 +82,9 @@ button {
     src: url("fonts/SaarSP.otf") format("opentype");
     font-weight: 100;
 }
+
+@font-face {
+    font-family: "Mont Heavy";
+    src: url("fonts/MontHeavy.ttf") format("truetype");
+    font-weight: 100;
+}

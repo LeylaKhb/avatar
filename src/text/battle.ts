@@ -1,15 +1,15 @@
-import title_character_2 from "../static/battle/title_character_2.png";
-import character_2 from "../static/battle/character_2.png";
-import character_3 from "../static/battle/character_3.png";
-import character_4 from "../static/battle/character_4.png";
-import character_5 from "../static/battle/character_5.png";
-import character_6 from "../static/battle/character_6.png";
-import character_7 from "../static/battle/character_7.png";
-import character_8 from "../static/battle/character_8.png";
-import character_9 from "../static/battle/character_9.png";
-import character_10 from "../static/battle/character_10.png";
-import character_11 from "../static/battle/character_11.png";
-import character_12 from "../static/battle/character_12.png";
+import title_character_2 from "../static/battle/title_character_2.webp";
+import character_2 from "../static/battle/character_2.webp";
+import character_3 from "../static/battle/character_3.webp";
+import character_4 from "../static/battle/character_4.webp";
+import character_5 from "../static/battle/character_5.webp";
+import character_6 from "../static/battle/character_6.webp";
+import character_7 from "../static/battle/character_7.webp";
+import character_8 from "../static/battle/character_8.webp";
+import character_9 from "../static/battle/character_9.webp";
+import character_10 from "../static/battle/character_10.webp";
+import character_11 from "../static/battle/character_11.webp";
+import character_12 from "../static/battle/character_12.webp";
 
 export const battle_characters = [
     {
