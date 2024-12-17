@@ -140,7 +140,7 @@ const Home: React.FC<{}> = () => {
                                         <span>Casual</span>
                                         <span>c 5 лет</span>
                                         <span>8 мини-игр</span>
-                                        <span>до 16 в игре</span>
+                                        <span>до 10 в игре</span>
                                     </p>
                                     <button className="home_game_button">Подробнее</button>
                                 </div>
@@ -159,7 +159,7 @@ const Home: React.FC<{}> = () => {
                                         <span>Action shooter</span>
                                         <span>c 9 лет</span>
                                         <span>14 игровых миров</span>
-                                        <span>до 16 в игре</span>
+                                        <span>до 10 в игре</span>
                                     </p>
                                     <button className="home_game_button">Подробнее</button>
                                 </div>
@@ -178,7 +178,7 @@ const Home: React.FC<{}> = () => {
                                         <span>Survival</span>
                                         <span>c 14 лет</span>
                                         <span>40 минут выживания</span>
-                                        <span>до 16 в игре</span>
+                                        <span>до 10 в игре</span>
                                     </p>
                                     <button className="home_game_button">Подробнее</button>
                                 </div>
@@ -197,7 +197,7 @@ const Home: React.FC<{}> = () => {
                                         <span>Tactic shooter</span>
                                         <span>c 14 лет</span>
                                         <span>15 видов оружия</span>
-                                        <span>до 16 в игре</span>
+                                        <span>до 10 в игре</span>
                                     </p>
                                     <button className="home_game_button" id="price">Подробнее</button>
                                 </div>
