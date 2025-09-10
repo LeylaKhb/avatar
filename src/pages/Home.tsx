@@ -14,6 +14,7 @@ import SocialNetwork from "../components/SocialNetwork";
 import Popup from "../components/Popup";
 import Actions from "../components/Actions";
 import SummerPrice from "../components/SummerPrice";
+import WinterPrice from "../components/WinterPrice";
 
 const Home: React.FC<{}> = () => {
     const el = useRef<HTMLDivElement>(null);
@@ -205,7 +206,7 @@ const Home: React.FC<{}> = () => {
                             </Link>
                         </div>
                     </div>
-                    <SummerPrice />
+                    <WinterPrice />
                     <div className="maps_block">
                         <h1 className="home_title block_2">Контакты</h1>
                         <div className="contacts_block">
