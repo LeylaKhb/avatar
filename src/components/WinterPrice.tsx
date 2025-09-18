@@ -57,7 +57,7 @@ const WinterPrice = () => {
                         </td>
                         <td>
                             <div className="closed-games-row">
-                                <span style={{fontWeight: 600}}>15000₽</span>
+                                <span style={{fontWeight: 600}}>14000₽</span>
                                 <span id="contacts" style={{marginTop: 5}}>3 часа</span>
                             </div>
                         </td>
@@ -105,7 +105,7 @@ const WinterPrice = () => {
                         <span style={{fontWeight: 600}}>11000₽</span> <span>2 часа</span>
                     </div>
                     <div className="price-row">
-                        <span style={{fontWeight: 600}}>15000₽</span> <span>3 часа</span>
+                        <span style={{fontWeight: 600}}>14000₽</span> <span>3 часа</span>
                     </div>
                 </div>
                 <div style={{width: '90%', marginRight: '5%', marginLeft: '5%', marginTop: 20, boxSizing: "border-box"}}>
