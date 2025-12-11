@@ -20,7 +20,7 @@ const ZombiesGames: React.FC = () => {
     const [activeIndex, setActiveIndex] = useState(0);
     const slideTo = (index: number) => {
         if (swiper)
-            swiper.slideTo(index)
+            swiper.slideTo(index);
     };
     useEffect(() => {
         if (swiper) {
@@ -87,28 +87,28 @@ const ZombiesGames: React.FC = () => {
                             рассчитана на аудиторию 14+. Особенность игры в том, что игроки сражаются не друг против
                             друга, а против армии монстров. Ваша команда может быть от 2-х до 16-и человек.
                         </p>
-                        <p className="zombies_block_desc" >
+                        <p className="zombies_block_desc">
                             Игроков ждет 12 волн нападения различных тварей: зомби, черви, пауки, летающие головы,
                             огненные рыцари, приведения и мегабоссы. Уровень сложности повышается с каждой волной, а
                             также зависит от количества игроков. По мере прохождения игры вам будет предоставляться
                             более мощное оружие: от арбалетов до автоматов с турелями и минами.
                         </p>
 
-                        <p className="zombies_block_desc zombies_block_desc_2" >
+                        <p className="zombies_block_desc zombies_block_desc_2">
                             Проверьте свои нервы на прочность! Настолько ли вы бесстрашны, как думали?
                         </p>
                         <img src={spider} className="zombie_spider"/>
                     </div>
 
-                        <div className="all_zombies_black_block">
-                            <h1 className="all_zombies_title">
-                                ощутите ужас, <br/> от которого стынет <br/> кровь в жилах!
-                            </h1>
-                        </div>
-                        <div style={{position: "relative"}}>
-                            <img src={zombie_bg_3} className="zombie_bg_3"/>
-                            <img src={all_zombies} className="all_zombies"/>
-                        </div>
+                    <div className="all_zombies_black_block">
+                        <h1 className="all_zombies_title">
+                            ощутите ужас, <br/> от которого стынет <br/> кровь в жилах!
+                        </h1>
+                    </div>
+                    <div style={{position: "relative"}}>
+                        <img src={zombie_bg_3} className="zombie_bg_3"/>
+                        <img src={all_zombies} className="all_zombies"/>
+                    </div>
                 </div>
             </div>
         </div>

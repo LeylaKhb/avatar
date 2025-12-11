@@ -54,9 +54,11 @@
     margin: 100px auto auto;
     font-family: Rockwell, sans-serif;
 }
+
 .all_characters_title {
     font-size: 80px;
 }
+
 .characters_desc {
     font-size: 20px;
     text-align: center;
@@ -173,6 +175,7 @@
 }
 
 .card-right {
+    position: absolute;
     top: 100px;
     right: 15%;
 }
@@ -276,11 +279,13 @@
     font-weight: bolder;
     border-bottom-left-radius: 10px;
 }
+
 .battle_modes_bg {
     position: relative;
     height: 1050px;
     clip-path: none !important;
 }
+
 @media screen and (max-width: 1200px) {
     .img_boy_battle {
         width: 34%;
@@ -295,18 +300,22 @@
     .battle_bg {
         clip-path: polygon(0% 0%, 0% 85%, 100% 85%, 100% 0%);
     }
+
     .title_battle {
         font-size: 82px;
     }
+
     .desc_battle {
         font-size: 20px;
         top: 260px;
         font-weight: 800;
         max-width: 38%;
     }
+
     .battle_character_desc {
         width: 200px;
     }
+
     .slide_character_title {
         font-size: 50px;
         margin-bottom: 0;
@@ -319,6 +328,7 @@
     .slide_character_ability {
         font-size: 20px;
     }
+
     .unique_ability_icon {
         width: 40px;
     }
@@ -327,9 +337,11 @@
         font-size: 15px;
         margin-left: 105px;
     }
+
     .all_characters_bg {
         height: 300px;
     }
+
     .slide_character {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%, 23% 85%, 0 85%);
     }
@@ -339,23 +351,29 @@
     .all_characters_title {
         font-size: 60px;
     }
+
     .all_characters_bg {
         margin-top: 100px;
     }
+
     .battle_mode_background {
         height: 500px;
     }
+
     .battle_modes_bg {
         height: 780px;
         object-fit: cover;
     }
+
     .battle_mode_card_top_right, .battle_mode_card_top_left {
         top: 56%;
     }
+
     .battle_mode_title {
         padding-top: 15px;
         font-size: 20px;
     }
+
     .card-left {
         left: 10%;
     }
@@ -363,43 +381,54 @@
     .card-right {
         right: 10%;
     }
+
     .battle_arrow_down {
         width: 60px;
         height: 60px;
     }
+
     .all_characters_bg {
         height: 200px;
     }
+
     .title_battle {
         top: 0;
         font-size: 70px;
     }
+
     .desc_battle {
         top: 170px;
         font-size: 18px;
     }
+
     .characters_title {
         font-size: 35px;
     }
 }
+
 @media screen and (max-width: 700px) {
     .all_characters_bg {
         width: 100%;
         height: 150px;
         margin-top: 70px;
     }
+
     .character_all_img {
         transform: translateY(-60px);
     }
+
     .stat-card {
         width: 150px;
     }
+
     .card-left .large-number {
         left: 10px;
     }
+
     .card-left .description {
         left: 30px;
     }
+
     .description {
         font-size: 30px;
         top: 15px;
@@ -408,6 +437,7 @@
     .card-right .large-number {
         left: 45px;
     }
+
     .card-right .description {
         left: 10px;
     }
@@ -415,6 +445,7 @@
     .battle_character_desc {
         width: 100px;
     }
+
     .characters_desc {
         font-size: 15px;
         max-width: 95%;
@@ -424,10 +455,12 @@
         font-size: 25px;
         margin: 200px auto auto;
     }
+
     .title_battle {
         top: 0;
         font-size: 40px;
     }
+
     .desc_battle {
         top: 100px;
         font-size: 15px;
@@ -436,32 +469,39 @@
         transform: none;
         margin-left: 25%;
     }
+
     .battle_bg {
         clip-path: none;
         height: 400px;
     }
+
     .img_boy_battle {
         transform: translateY(150px) translateX(-20px);
         height: 250px;
         width: 212px;
     }
+
     .img_girl_battle {
         height: 250px;
         width: 140px;
         top: 150px;
     }
+
     .characters_title {
         font-size: 20px;
         margin: 80px auto auto;
     }
+
     .characters_desc {
         font-size: 12px;
     }
+
     .slide_character {
         width: 95vw;
         height: 500px;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 40% 100%, 30% 85%, 0 85%);
     }
+
     .character_img {
         width: 50%;
         position: absolute;
@@ -477,68 +517,84 @@
         margin-left: 20px;
         margin-top: 40px;
     }
+
     .slide_character_desc {
         font-size: 12px;
         margin-left: 20px;
         max-width: 90%;
     }
+
     .slide_character_ability {
         font-size: 13px;
         max-width: 100%;
         margin-left: 20px;
     }
+
     .unique_ability_icon {
         width: 25px;
         margin-right: 0;
         transform: translateY(2px);
     }
+
     .slide_character_ability_desc {
         font-size: 10px;
         margin-left: 45px;
         max-width: 70%;
     }
+
     .battle_games .swiper-button-next, .battle_games .swiper-button-prev {
         padding: 0 5px;
     }
+
     .swiper-button-next {
         left: 60px;
     }
+
     .battle_games .swiper-button-prev:after, .battle_games .swiper-button-next:after {
         font-size: 15px;
     }
+
     .battle_modes_bg {
         height: 1200px;
         object-fit: cover;
     }
+
     .card-left, .card-right {
         top: 50px;
     }
+
     .battle_arrow_down {
         animation: bounceUpDownMobile 3s infinite;
         top: 130px;
         left: 43%;
     }
+
     .battle_mode_background {
         height: 900px;
     }
+
     .battle_mode_card {
         width: 220px;
     }
+
     .battle_mode_card_top_left {
         top: 35%;
         left: 50%;
         transform: translateX(-50%);
     }
+
     .battle_mode_card_top_right {
         top: 53%;
         left: 50%;
         transform: translateX(-50%);
     }
+
     .battle_mode_card_bottom_left {
         bottom: 29%;
         left: 50%;
         transform: translateX(-50%);
     }
+
     .battle_mode_card_bottom_right {
         bottom: 11%;
         left: 50%;
