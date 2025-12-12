@@ -1,9 +1,6 @@
 import React from "react";
 import "../styles/popup.css"
-import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import moment from 'moment-timezone';
-import InputMask from 'react-input-mask';
 import RequestForm from "./RequestForm";
 
 interface PopupProps {

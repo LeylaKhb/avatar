@@ -110,19 +110,19 @@ const SummerPrice = () => {
                 </div>
                 <div style={{width: '90%', marginRight: '5%', marginLeft: '5%', marginTop: 20, boxSizing: "border-box"}}>
                     <div style={{display: "flex", flexFlow: "row"}}>
-                        <img src={bell} className="bell"/>
+                        <img src={bell} className="bell" alt="bell"/>
                         <div className="bell_text">Лаунж-зона для вашего праздника, оборудованная столами,
                             стульями, микроволновой печью, кулером и посудой в подарок!
                         </div>
                     </div>
                     <div style={{display: "flex", flexFlow: "row", marginTop: 12}}>
-                        <img src={bell} className="bell"/>
+                        <img src={bell} className="bell" alt="bell"/>
                         <div className="bell_text">Открытая игра: оплата идет за игрока, каждый платит сам
                             за себя, к вам могут присоединиться другие участники
                         </div>
                     </div>
                     <div style={{display: "flex", flexFlow: "row", marginTop: 12}}>
-                        <img src={bell} className="bell"/>
+                        <img src={bell} className="bell" alt="bell"/>
                         <div className="bell_text">Закрытая игра: аренда площадки только для вашей компании. Фиксированная цена вне зависимости от количества участников
                         </div>
                     </div>

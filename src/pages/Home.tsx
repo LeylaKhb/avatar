@@ -6,18 +6,16 @@ import home_battle from "../static/home_battle.webp"
 import home_zombies from "../static/home_zombies.webp"
 import home_party from "../static/home_party.webp"
 import home_img from "../static/home_img.webp";
-import bell from "../static/bell.svg";
 import {Link} from "react-router-dom";
 import YandexMap from "../components/YandexMap";
 import Typed from "typed.js";
 import SocialNetwork from "../components/SocialNetwork";
 import Popup from "../components/Popup";
 import Actions from "../components/Actions";
-import SummerPrice from "../components/SummerPrice";
 import WinterPrice from "../components/WinterPrice";
 
 const Home: React.FC<{}> = () => {
-    const el = useRef<HTMLDivElement>(null);
+    const el = useRef<HTMLSpanElement>(null);
     const typedInstance = useRef<Typed | null>(null);
     const [telError, setTelError] = useState("");
     const [telInput, setTelInput] = useState("");
@@ -37,6 +35,8 @@ const Home: React.FC<{}> = () => {
     }
 
     useEffect(() => {
+        if (!el.current) return;
+
         typedInstance.current = new Typed(el.current, {
             strings: ["AVATAR ARENA"],
             typeSpeed: 50,
@@ -44,8 +44,10 @@ const Home: React.FC<{}> = () => {
         });
 
         return () => {
+            typedInstance.current?.destroy();
+            typedInstance.current = null;
         };
-    });
+    }, []);
 
     function handleNameInput(e: React.ChangeEvent<HTMLInputElement>) {
         let inputValue = e.target.value;
@@ -111,10 +113,13 @@ const Home: React.FC<{}> = () => {
                     flexFlow: "column"
                 }}>
                     <div style={{width: '100%', textAlign: "center"}}>
-                        <h1 ref={el} className="home_title"></h1>
+                        <h1 className="home_title">
+                            <span className="sr-only">AVATAR ARENA</span>
+                            <span ref={el} aria-hidden="true" />
+                        </h1>
                         <h2 className="home_desc">ПЕРВАЯ В КУКМОРЕ <br/> АРЕНА ВИРУАЛЬНОЙ РЕАЛЬНОСТИ</h2>
                         <button className="consultation_button" onClick={setPopupTrue}>Записаться онлайн</button>
-                        <img src={home_img} className="home_img"/>
+                        <img src={home_img} className="home_img" alt="home_img"/>
                     </div>
                     <Popup isVisible={isPopupVisible} setVisibleFalse={setPopupFalse}/>
 
@@ -130,7 +135,7 @@ const Home: React.FC<{}> = () => {
                         <div className="home_games">
                             <Link to="/games/party">
                                 <div className="home_game party">
-                                    <img src={home_party} className="home_game_img"/>
+                                    <img src={home_party} className="home_game_img" alt="home_img"/>
                                     <h1 className="home_game_title">PARTY GAMES</h1>
                                     <p className="home_game_titles">
                                         <span> Жанр: </span>
@@ -149,7 +154,7 @@ const Home: React.FC<{}> = () => {
                             </Link>
                             <Link to="/games/battle">
                                 <div className="home_game battle">
-                                    <img src={home_battle} className="home_game_img"/>
+                                    <img src={home_battle} className="home_game_img" alt="home_img"/>
                                     <h1 className="home_game_title">BATTLE GAMES</h1>
                                     <p className="home_game_titles">
                                         <span> Жанр: </span>
@@ -168,7 +173,7 @@ const Home: React.FC<{}> = () => {
                             </Link>
                             <Link to="/games/zombies">
                                 <div className="home_game zombies">
-                                    <img src={home_zombies} className="home_game_img"/>
+                                    <img src={home_zombies} className="home_game_img" alt="home_img"/>
                                     <h1 className="home_game_title">ZOMBIES GAMES</h1>
                                     <p className="home_game_titles">
                                         <span> Жанр: </span>
@@ -187,7 +192,7 @@ const Home: React.FC<{}> = () => {
                             </Link>
                             <Link to="/games/tactics">
                                 <div className="home_game tactics">
-                                    <img src={home_tactics} className="home_game_img"/>
+                                    <img src={home_tactics} className="home_game_img" alt="home_img"/>
                                     <h1 className="home_game_title">TACTICS GAMES</h1>
                                     <p className="home_game_titles">
                                         <span> Жанр: </span>

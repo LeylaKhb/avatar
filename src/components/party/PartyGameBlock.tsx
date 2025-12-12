@@ -46,7 +46,7 @@ const PartyGameBlock: React.FC<PartyGameBlockProps> = ({
         }
     }, [isThirdParagraphOnScreen, thirdParagraphHasBeenVisible]);
 
-    const el = useRef<HTMLDivElement>(null);
+    const el = useRef<HTMLSpanElement>(null);
     const typedInstance = useRef<Typed | null>(null);
 
     useEffect(() => {
@@ -57,10 +57,7 @@ const PartyGameBlock: React.FC<PartyGameBlockProps> = ({
                 showCursor: false,
             });
         }
-
-        return () => {
-        };
-    }, [isTitleOnScreen]);
+    }, [isTitleOnScreen, title]);
 
     return (
         <div className={`party_game_block ${right ? "move_right_block" : "move_left_block"}`}>
@@ -71,7 +68,10 @@ const PartyGameBlock: React.FC<PartyGameBlockProps> = ({
                 </div>
             </div>
             <div className="party_game_desc">
-                <h1 className="party_game_title" ref={el}></h1>
+                <h1 className="party_game_title">
+                    <span className="sr-only">{title}</span>
+                    <span ref={el} aria-hidden="true" />
+                </h1>
                 <p ref={titleRef} className={titleHasBeenVisible ? "visible" : "hidden_bottom"}>
                     {firstParagraph.map((part, index) =>
                         part.bold ? (

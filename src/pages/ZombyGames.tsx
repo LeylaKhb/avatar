@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from "react";
+import React, {useEffect, useState} from "react";
 import {Helmet, HelmetProvider} from 'react-helmet-async';
 import zombies_bg_2 from "../static/zombies/zombies_bg_2.webp";
 import spider from "../static/zombies/spider.webp";
@@ -80,7 +80,7 @@ const ZombiesGames: React.FC = () => {
                         </div>
                     </Swiper>
                     <div className="zombies_block">
-                        <img src={zombies_bg_2} className="zombies_bg_2"/>
+                        <img src={zombies_bg_2} className="zombies_bg_2" alt="slide_zombie_bg_img"/>
                         <h2 className="zombies_block_title">Об игре</h2>
                         <p className="zombies_block_desc">
                             Игра представляет собой шутер от первого лица с элементами хоррора и
@@ -97,7 +97,7 @@ const ZombiesGames: React.FC = () => {
                         <p className="zombies_block_desc zombies_block_desc_2">
                             Проверьте свои нервы на прочность! Настолько ли вы бесстрашны, как думали?
                         </p>
-                        <img src={spider} className="zombie_spider"/>
+                        <img src={spider} className="zombie_spider" alt="slide_zombie_bg_img"/>
                     </div>
 
                     <div className="all_zombies_black_block">
@@ -106,8 +106,8 @@ const ZombiesGames: React.FC = () => {
                         </h1>
                     </div>
                     <div style={{position: "relative"}}>
-                        <img src={zombie_bg_3} className="zombie_bg_3"/>
-                        <img src={all_zombies} className="all_zombies"/>
+                        <img src={zombie_bg_3} className="zombie_bg_3" alt="slide_zombie_bg_img"/>
+                        <img src={all_zombies} className="all_zombies" alt="slide_zombie_bg_img"/>
                     </div>
                 </div>
             </div>

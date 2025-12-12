@@ -47,19 +47,19 @@ const Actions: React.FC = () => {
             <h1 className="home_title block_2">НОВЫЙ РАЗВЛЕКАТЕЛЬНЫЙ <br/> VR-ЦЕНТР ПРЕДЛАГАЕТ</h1>
             <div className="home_actions">
                 <div className={`home_actions_div ${firstParagraphHasBeenVisible? "visible" : "hidden_bottom"}`}>
-                    <img src={home_actions_1} className="home_actions_img"/>
+                    <img src={home_actions_1} className="home_actions_img" alt="home_actions_img"/>
                     <div className="home_actions_desc" ref={firstParagraphRef}>Провести время с семьей и друзьями</div>
                 </div>
                 <div className={`home_actions_div ${secondParagraphHasBeenVisible? "visible" : "hidden_bottom"}`}>
-                    <img src={home_actions_2} className="home_actions_img"/>
+                    <img src={home_actions_2} className="home_actions_img" alt="home_actions_img"/>
                     <div className="home_actions_desc" ref={secondParagraphRef}>Отметить день рождения</div>
                 </div>
                 <div className={`home_actions_div ${thirdParagraphHasBeenVisible ? "visible" : "hidden_bottom"}`}>
-                    <img src={home_actions_3} className="home_actions_img"/>
+                    <img src={home_actions_3} className="home_actions_img" alt="home_actions_img"/>
                     <div className="home_actions_desc" ref={thirdParagraphRef}>Провести корпоратив или вечеринку</div>
                 </div>
                 <div className={`home_actions_div ${fourthParagraphHasBeenVisible? "visible" : "hidden_bottom"}`}>
-                    <img src={home_actions_4} className="home_actions_img"/>
+                    <img src={home_actions_4} className="home_actions_img" alt="home_actions_img"/>
                     <div className="home_actions_desc" id="games" ref={fourthParagraphRef}>Организовать досуг для любителей vr-игр</div>
                 </div>
             </div>

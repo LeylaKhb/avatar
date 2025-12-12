@@ -1,8 +1,6 @@
 import {Link} from "react-router-dom";
 import logo from "../../static/logo.svg"
 import vk from "../../static/vk.webp"
-// @ts-ignore
-import tg from "../../static/tg.png"
 import inst from "../../static/inst.png"
 import React, {useState} from "react";
 import MenuHeader from "./MenuHeader";
@@ -56,7 +54,7 @@ const Header: React.FC<HeaderProps> = () => {
                 <a href="/#games" className="link_header_footer">Игры</a>
                 <a href="/#price" className="link_header_footer">Цены</a>
                 <a href="/#contacts" className="link_header_footer">Контакты</a>
-                <a onClick={setPopupTrue} href="#" className="link_header_footer">Забронировать время</a>
+                <div onClick={setPopupTrue} className="link_header_footer" style={{cursor: "pointer"}}>Забронировать время</div>
             </div>
 
             <div className="contacts_header_footer">

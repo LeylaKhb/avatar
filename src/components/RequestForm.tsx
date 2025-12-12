@@ -1,5 +1,4 @@
-import React, {FormEventHandler, useState} from "react";
-import whatsapp from "../static/vk.webp";
+import React, {useState} from "react";
 import DatePicker from "react-datepicker";
 import moment from "moment-timezone";
 import InputMask from "react-input-mask";
@@ -43,7 +42,6 @@ const RequestForm: React.FC = () => {
     }
 
     function handleTimeInput(e: React.ChangeEvent<HTMLInputElement>) {
-        let inputValue = e.target.value;
         setTime(e.target.value);
     }
 

@@ -63,10 +63,10 @@ const TacticsGames: React.FC = () => {
                 <div style={{marginTop: 30}}>
                     <div style={{width: '100vw', height: '96vh'}} ref={titleRef}
                          className="tactics_title_div">
-                        <img src={tactics_title_bg} className="tactics_title_bg"/>
+                        <img src={tactics_title_bg} className="tactics_title_bg" alt="tactics_title_bg"/>
                         <div className={hasBeenVisible ? "visible" : "hidden_bottom"}
                              style={{height: '100%', width: "100%", position: "absolute", top: 0}}>
-                            <img src={tactics_games_title} className="tactics_games_title"/>
+                            <img src={tactics_games_title} className="tactics_games_title" alt="tactics_games_title"/>
                             <p className="tactics_games_desc">Тактический командный шутер с реалистичными моделями
                                 оружия, звуками и окружением...</p>
                         </div>
@@ -75,7 +75,7 @@ const TacticsGames: React.FC = () => {
                         {aboutHasBeenVisible &&
                           <ShuffleText content="ОБ ИГРЕ"/>
                         }
-                        <img src={tactics_about} className="tactics_about_bg"/>
+                        <img src={tactics_about} className="tactics_about_bg" alt="tactics_games"/>
                         <p className="tactics_about_desc" ref={aboutRef}>
                             Эта игра для тех кто любит хардкорные шутеры по типу: warzone, counter strike 2, valorant.
                             Никакой мультяшной графики или низкополигональных моделек. Только реализм.</p>
@@ -86,11 +86,11 @@ const TacticsGames: React.FC = () => {
                             {modesHasBeenVisible &&
                               <ShuffleText content="РЕЖИМЫ СПЕЦОПЕРАЦИИ"/>
                             }
-                            <img src={tactics_modes_bg} className="tactics_modes_bg"/>
+                            <img src={tactics_modes_bg} className="tactics_modes_bg" alt="tactics_games"/>
                             <div className="tactic-modes__blocks">
                                 <div ref={modesRef} className="tactics_mode_block">
                                     <div className="tactics_mode_div">
-                                        <img src={tactics_mode_1} className="tactics_mode_bg"/>
+                                        <img src={tactics_mode_1} className="tactics_mode_bg" alt="tactics_games"/>
                                         <h1 className="tactics_mode_title">ОДНА ЖИЗНЬ</h1>
                                         <p className="tactics_mode_desc">
                                             Задача уничтожить команду соперника, отличается от режима бой насмерть тем,
@@ -100,7 +100,7 @@ const TacticsGames: React.FC = () => {
                                 </div>
                                 <div className="tactics_mode_block">
                                     <div className="tactics_mode_div">
-                                        <img src={tactics_mode_2} className="tactics_mode_bg"/>
+                                        <img src={tactics_mode_2} className="tactics_mode_bg" alt="tactics_games"/>
                                         <h1 className="tactics_mode_title">БОЙ НАСМЕРТЬ</h1>
                                         <p className="tactics_mode_desc">
                                             Задача уничтожить команду соперника, но если ты умер, то ты можешь пойти на
@@ -110,7 +110,7 @@ const TacticsGames: React.FC = () => {
                                 </div>
                                 <div className="tactics_mode_block">
                                     <div className="tactics_mode_div">
-                                        <img src={tactics_mode_3} className="tactics_mode_bg"/>
+                                        <img src={tactics_mode_3} className="tactics_mode_bg" alt="tactics_games"/>
                                         <h1 className="tactics_mode_title">
                                             ГОНКА ВООРУЖЕНИЙ
                                         </h1>
@@ -122,7 +122,7 @@ const TacticsGames: React.FC = () => {
                                 </div>
                                 <div className="tactics_mode_block">
                                     <div className="tactics_mode_div">
-                                        <img src={tactics_mode_4} className="tactics_mode_bg"/>
+                                        <img src={tactics_mode_4} className="tactics_mode_bg" alt="tactics_games"/>
                                         <h1 className="tactics_mode_title">УСТАНОВКА БОМБЫ</h1>
                                         <p className="tactics_mode_desc">
                                             Цель атакующих установить бомбу на контрольной точке. Цель защищающихся не

@@ -133,22 +133,22 @@ const BattleGames: React.FC = () => {
                         <img src={bg_modes} className="battle_mode_background" alt={bg_modes}/>
 
                         <div className="battle_mode_card battle_mode_card_top_left">
-                            <img src={mode_1} className="battle_mode_image"/>
+                            <img src={mode_1} className="battle_mode_image" alt="battle_mode_image"/>
                             <div className="battle_mode_title">Бой насмерть</div>
                         </div>
 
                         <div className="battle_mode_card battle_mode_card_top_right">
-                            <img src={mode_2} className="battle_mode_image"/>
+                            <img src={mode_2} className="battle_mode_image" alt="battle_mode_image"/>
                             <div className="battle_mode_title">Контрольная точка</div>
                         </div>
 
                         <div className="battle_mode_card battle_mode_card_bottom_left">
-                            <img src={mode_3} className="battle_mode_image"/>
+                            <img src={mode_3} className="battle_mode_image" alt="battle_mode_image"/>
                             <div className="battle_mode_title">Одна жизнь</div>
                         </div>
 
                         <div className="battle_mode_card battle_mode_card_bottom_right">
-                            <img src={mode_4} className="battle_mode_image"/>
+                            <img src={mode_4} className="battle_mode_image" alt="battle_mode_image"/>
                             <div className="battle_mode_title">Захват территории</div>
                         </div>
                     </div>
